@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoBill POS - ServeEasy</title>
+    <link rel="stylesheet" href="../CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <i class="fas fa-bars menu-toggle"></i>
+        <div class="logo">
+          <span class="logo-main">Khmer Food</span>
+        </div>
+      </div>
+      <div class="header-center">
+        <span>ServeEasy POS</span>
+        <span>|</span>
+        <span>Khmer Food Restaurant</span>
+        <span>|</span>
+        <span>Counter: 1st Counter</span>
+      </div>
+      <div class="header-right">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-sync-alt"></i>
+        <i class="fas fa-expand"></i>
+        <div class="profile-img"></div>
+      </div>
+    </header>
+
+    <div id="app-container">
+      <!-- Left Menu Section -->
+      <main id="menu-section">
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search in All Items"
+          />
+        </div>
+        <div class="items-grid" id="items-grid">
+          <!-- Items will be injected here or hardcoded for demo -->
+          <div class="item-card">
+            <img
+              src="/Images/បាយឆាគ្រឿងសមុទ្យ.jpg"
+              alt="Mutton Briyani"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">បាយឆាគ្រឿងសមុទ្យ</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>3.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/បាយឆាលុកលាក់.jpg"
+              alt="Non Veg Meals"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">បាយឆាលុកលាក់</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>4.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/នំបញ្ចុកសម្លរប្រហើរ.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">នំបញ្ចុកសម្លរប្រហើរ</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/បាយពងទាចៀន.jpg"
+              alt="Chettinad Chicken"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">បាយពងទាចៀន</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/បាយឆា.jpg"
+              alt="Mutton Briyani"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">បាយឆា</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/មាន់ដុតទឹកឃ្មុំ.jpg"
+              alt="Non Veg Meals"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">មាន់ដុតទឹកឃ្មុំ</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>10.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ប្រហុកខ្ទះ.jpg"
+              alt="Chettinad Chicken"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ប្រហុកខ្ទះ</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>6.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/អាម៉ុក.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">អាម៉ុកត្រី</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>3.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ប្រហិតត្រីបំពង.jpg"
+              alt="Mutton Briyani"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ប្រហិតត្រីបំពង</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>3.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ត្រីចៀនជួន.jpg"
+              alt="Non Veg Meals"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ត្រីចៀនជួន</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>4.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/នំកង.jpg"
+              alt="Chettinad Chicken"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">នំកង</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>1.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/នំបត់.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">នំបត់</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>1.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/នំផ្លែអាយ.jpg"
+              alt="Mutton Briyani"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">នំផ្លែអាយ</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>1.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/នំអាកោត្នោត.jpg"
+              alt="Non Veg Meals"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">នំអាកោត្នោត</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>3.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/នំបាក.jpg"
+              alt="Chettinad Chicken"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">នំបាក់បិន</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.00
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ទឹកក្រូច.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ទឹកក្រូច</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ទឹកមាន.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ទឹកមាន</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ទឹកអំពៅ.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ទឹកអំពៅ</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/តែក្រូចឆ្មា.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">តែក្រូចឆ្មា</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+          <div class="item-card">
+            <img
+              src="/Images/ទឹកឪឡឹក.jpg"
+              alt="Chicken Fried Rice"
+              class="item-img"
+            />
+            <div class="item-info">
+              <div class="item-name-text">ទឹកឪឡឹក</div>
+              <div class="item-price-tag">
+                <span class="real-currency">$</span>2.50
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Right Cart Section -->
+      <aside id="cart-section">
+        <div class="cart-header">
+          <div class="cart-title">
+            Dine In
+            <span
+              style="
+                font-weight: 400;
+                color: #718096;
+                font-size: 0.8rem;
+                border: 1px solid #e2e8f0;
+                padding: 2px 4px;
+                border-radius: 4px;
+              "
+              >T5</span
+            >
+          </div>
+          <div class="cart-actions">
+            <i class="fas fa-trash-alt" title="Clear Cart"></i>
+            <i class="fas fa-hand-paper" title="Hold"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+
+        <div class="customer-info">
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            "
+          >
+            <span class="customer-name">Mr. Mean Chandara | 012-345-6789</span>
+            <div>
+              <i
+                class="fas fa-pen"
+                style="font-size: 0.8rem; margin-right: 0.5rem"
+              ></i>
+              <i class="fas fa-times" style="font-size: 0.8rem"></i>
+            </div>
+          </div>
+          <div class="customer-details">Poipet, Banteay Meanchey</div>
+        </div>
+
+        <div class="cart-items">
+          <!-- Sample Cart Items in Card Style -->
+          <div class="cart-item">
+            <div class="item-details">
+              <div class="item-name">នំបញ្ចុកសម្លរប្រហើរ</div>
+              <div class="item-sub">$2.50 x 1</div>
+            </div>
+            <div class="item-price-actions">
+              <div class="item-price">$2.50</div>
+              <div class="item-remove-btn">
+                <i class="fas fa-trash-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart-footer">
+          <div class="total-row">
+            <div>
+              <span class="total-label">Total</span>
+              <div style="font-size: 0.75rem; color: #718096">
+                (Items: 5, Quantity: 14)
+              </div>
+            </div>
+            <span class="total-amount"
+              ><span
+                class="real-currency"
+                style="font-size: 1rem; color: var(--primary); opacity: 0.8"
+                >$</span
+              >4.75</span
+            >
+          </div>
+          <div class="payment-buttons">
+            <div class="btn btn-primary btn-full">Confirm Order</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer id="footer">
+      <p>&copy; 2026 <span>All rights reserved.</span></p>
+    </footer>
+
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
